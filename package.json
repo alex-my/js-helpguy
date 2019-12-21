@@ -17,7 +17,7 @@
     "rollup-plugin-eslint": "^7.0.0"
   },
   "lint-staged": {
-    "packages/**.js": [
+    "*.js": [
       "eslint --fix --color",
       "prettier --write",
       "git add"
