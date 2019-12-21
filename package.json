@@ -6,5 +6,12 @@
   ],
   "devDependencies": {
     "lerna": "^3.19.0"
+  },
+  "lint-staged": {
+    "src/*.js": [
+      "eslint --fix --color",
+      "prettier --write",
+      "git add"
+    ]
   }
 }

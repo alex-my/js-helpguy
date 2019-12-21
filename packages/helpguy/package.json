@@ -11,15 +11,6 @@
   "license": "MIT",
   "dependencies": {
     "helpguy-crypto": "^1.0.0",
-    "helpguy-human": "^1.0.0",
-    "helpguy-ip": "^1.0.0",
-    "helpguy-jwt": "^1.0.0",
-    "helpguy-random": "^1.0.0",
-    "helpguy-regexp": "^1.0.0",
-    "helpguy-sign": "^1.0.0",
-    "helpguy-time": "^1.0.0",
-    "helpguy-validate": "^1.0.0",
-    "helpguy-word": "^1.0.0",
     "rollup": "^1.27.13"
   },
   "devDependencies": {

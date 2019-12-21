@@ -39,12 +39,5 @@
     "rollup-plugin-visualizer": "^3.3.1"
   },
   "jsnext": true,
-  "browser": true,
-  "lint-staged": {
-    "src/*.js": [
-      "eslint --fix --color",
-      "prettier --write",
-      "git add"
-    ]
-  }
+  "browser": true
 }
