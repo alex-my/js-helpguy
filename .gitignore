@@ -4,3 +4,4 @@ packages/*/package-lock.json
 .DS_Store
 dist
 stats.html
+coverage

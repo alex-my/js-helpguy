@@ -12,7 +12,5 @@ module.exports = {
     // 当箭头函数前只有一个参数时，是否保留括号，默认保留
     arrowParens: 'always',
     // 一行的字符数，超过会自动换行
-    printWidth: 180,
-    // 尾部追加逗号
-    trailingComma: 'none'
+    printWidth: 180
 };

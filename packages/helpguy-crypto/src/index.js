@@ -1,9 +1,11 @@
+// import crypto from 'crypto-js';
+
+// const md5 = (word) => crypto.MD5(word).toString();
+
+// export default md5;
+
 const crypto = require('crypto-js');
 
-class MyCrypto {
-    md5(str) {
-        return crypto.MD5(str).toString();
-    }
-}
+const md5 = (word) => crypto.MD5(word).toString();
 
-export default MyCrypto;
+module.exports = md5;
