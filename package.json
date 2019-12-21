@@ -8,7 +8,7 @@
     "lerna": "^3.19.0"
   },
   "lint-staged": {
-    "packages/*/*.js": [
+    "packages/**.js": [
       "eslint --fix --color",
       "prettier --write",
       "git add"
