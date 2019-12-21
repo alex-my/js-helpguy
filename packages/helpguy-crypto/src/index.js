@@ -1,6 +1,8 @@
+const crypto = require('crypto-js');
+
 class MyCrypto {
-    md5() {
-        console.log('md5 is ...');
+    md5(str) {
+        return crypto.MD5(str).toString();
     }
 }
 

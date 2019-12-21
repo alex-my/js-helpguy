@@ -1,20 +1,26 @@
-import babel from 'rollup-plugin-babel';
-import {
-    terser
-} from 'rollup-plugin-terser';
+import babel from "rollup-plugin-babel";
+import { terser } from "rollup-plugin-terser";
+import commonjs from "rollup-plugin-commonjs";
+import resolve from "@rollup/plugin-node-resolve";
 
 export default {
-    input: './src/index.js',
-    output: {
-        file: 'dist/index.js',
-        format: 'umd',
-        name: 'index',
-    },
-    plugins: [
-        babel({
-            // 排除
-            exclude: 'node_modules/**',
-        }),
-        terser()
-    ]
-}
+  input: "./src/index.js",
+  output: {
+    file: "dist/index.js",
+    format: "umd",
+    name: "index"
+  },
+  plugins: [
+    resolve({
+      mainFields: ["jsnext", "main", "browser"]
+    }),
+    commonjs({
+      sourceMap: false
+    }),
+    babel({
+      // 排除
+      exclude: "node_modules/**"
+    }),
+    terser()
+  ]
+};
