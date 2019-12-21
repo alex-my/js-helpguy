@@ -1,7 +1,13 @@
 import babel from "rollup-plugin-babel";
-import { terser } from "rollup-plugin-terser";
+import {
+  terser
+} from "rollup-plugin-terser";
 import commonjs from "rollup-plugin-commonjs";
 import resolve from "@rollup/plugin-node-resolve";
+import notify from "rollup-plugin-notify";
+import progress from "rollup-plugin-progress";
+import visualizer from "rollup-plugin-visualizer";
+import analyzer from 'rollup-plugin-analyzer';
 
 export default {
   input: "./src/index.js",
@@ -11,6 +17,9 @@ export default {
     name: "index"
   },
   plugins: [
+    progress({
+      clearLine: true
+    }),
     resolve({
       mainFields: ["jsnext", "main", "browser"]
     }),
@@ -21,6 +30,13 @@ export default {
       // 排除
       exclude: "node_modules/**"
     }),
-    terser()
+    terser(),
+    notify(),
+    visualizer({
+      open: false
+    }),
+    analyzer({
+      summaryOnly: true
+    })
   ]
 };
