@@ -4,11 +4,13 @@ module.exports = {
         es6: true,
         node: true
     },
-    extends: ["airbnb-base", "plugin:prettier/recommended"],
+    extends: ['airbnb-base'],
     parserOptions: {
         ecmaVersion: 2018,
-        sourceType: "module"
+        sourceType: 'module'
     },
     // https://cn.eslint.org/docs/rules/
-    rules: {}
+    rules: {
+        'class-methods-use-this': 'off'
+    }
 };
