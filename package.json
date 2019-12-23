@@ -16,13 +16,5 @@
     "lint-staged": "^9.5.0",
     "prettier": "^1.19.1",
     "rollup-plugin-eslint": "^7.0.0"
-  },
-  "lint-staged": {
-    "*.js": [
-      "lerna exec npm run test",
-      "eslint --fix --color",
-      "prettier --write",
-      "git add"
-    ]
   }
 }
