@@ -1,6 +1,6 @@
 {
   "name": "helpguy",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
@@ -18,10 +18,10 @@
   },
   "license": "MIT",
   "dependencies": {
-    "helpguy-crypto": "^0.2.1",
-    "helpguy-ip": "^0.2.1",
-    "helpguy-time": "^0.2.1",
-    "helpguy-word": "^0.2.1",
+    "helpguy-crypto": "^0.3.0",
+    "helpguy-ip": "^0.3.0",
+    "helpguy-time": "^0.3.0",
+    "helpguy-word": "^0.3.0",
     "rollup": "^1.27.13"
   },
   "devDependencies": {
