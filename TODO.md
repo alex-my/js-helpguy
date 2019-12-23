@@ -3,10 +3,9 @@
 - [x] crypto
 - [ ] human
 - [x] ip
-- [ ] jwt
 - [ ] random
 - [ ] regexp
 - [ ] sign
-- [ ] time
+- [x] time
 - [ ] validate
 - [ ] word
