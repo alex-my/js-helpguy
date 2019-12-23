@@ -30,3 +30,10 @@ test('tomorrowZero', () => {
 test('day', () => {
     expect(time.day()).toHaveLength(8);
 });
+
+test('sleep', async () => {
+    const t1 = time.now();
+    await time.sleep(1000);
+    const t2 = time.now();
+    expect(t2 - t1).toBe(1);
+});

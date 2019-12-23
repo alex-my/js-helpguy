@@ -97,6 +97,16 @@ const day = () => {
     return `${d.getFullYear()}${d.getMonth() + 1}${d.getDate()}`;
 };
 
+/**
+ * SLEEP
+ * @param {number} microsecond - 毫秒
+ */
+const sleep = (microsecond) => {
+    return new Promise((resolve) => {
+        setTimeout(() => resolve(), microsecond);
+    });
+};
+
 export default {
     now,
     ms,
@@ -104,5 +114,6 @@ export default {
     toLocalTime,
     todayZero,
     tomorrowZero,
-    day
+    day,
+    sleep
 };
