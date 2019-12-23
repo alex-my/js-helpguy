@@ -3,7 +3,7 @@
  * @param {string} ipString
  * @returns {number}
  */
-const toInt = (ipString) => {
+const ipToInt = (ipString) => {
     if (!ipString) {
         return 0;
     }
@@ -16,7 +16,7 @@ const toInt = (ipString) => {
  * @param {number} ipInt
  * @return {string}
  */
-const toString = (ipInt) => {
+const ipToString = (ipInt) => {
     if (!ipInt) {
         return '';
     }
@@ -31,6 +31,6 @@ const toString = (ipInt) => {
 };
 
 export default {
-    toInt,
-    toString
+    ipToInt,
+    ipToString
 };
