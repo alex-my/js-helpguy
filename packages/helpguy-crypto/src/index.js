@@ -271,7 +271,7 @@ const aesDecrypt = (word, key, iv, mode = 'CBC', isBase64 = true) => {
  * @param {string} word : 要加密的内容
  * @param {string} key : 密钥
  * @param {string} iv : 密钥偏移量
- * @param {CBC | ECB | CTR | CFB | OFB} mode : 默认 CBC
+ * @param {string} mode : 默认 CBC,可选 CBC, ECB, CTR, CFB, OFB
  * @param {boolean} isBase64 : 返回值是否是 base64,默认 true
  * @param {string} padding 填充模式, ZeroPadding, 可选 Pkcs7, Pkcs5, ZeroPadding
  * @returns {string} 加密的内容
@@ -323,7 +323,7 @@ const tripleDesEncode = (word, key, iv, mode = 'CBC', isBase64 = true, padding =
  * @param {string} word : 要加密的内容
  * @param {string} key : 密钥
  * @param {string} iv : 密钥偏移量
- * @param {CBC | ECB | CTR | CFB | OFB} mode : 默认 CBC
+ * @param {string} mode : 默认 CBC,可选 CBC, ECB, CTR, CFB, OFB
  * @param {boolean} isBase64 : 返回值是否是 base64,默认 true
  * @param {string} padding 填充模式, ZeroPadding, 可选 Pkcs7, Pkcs5, ZeroPadding
  * @returns {string} 加密的内容
@@ -373,7 +373,7 @@ const tripleDesDecode = (word, key, iv, mode = 'CBC', isBase64 = true, padding =
  * @param {string} word : 要加密的内容
  * @param {string} key : 密钥
  * @param {string} iv : 密钥偏移量
- * @param {CBC | ECB | CTR | CFB | OFB} mode : 默认 CBC
+ * @param {string} mode : 默认 CBC,可选 CBC, ECB, CTR, CFB, OFB
  * @param {boolean} isBase64 : 返回值是否是 base64,默认 true
  * @param {string} padding 填充模式,默认为 ZeroPadding,可选值有 Pkcs7, Pkcs5, ZeroPadding
  * @returns {string} 加密的内容
@@ -425,7 +425,7 @@ const desEncrypt = (word, key, iv, mode = 'CBC', isBase64 = true, padding = 'Zer
  * @param {string} word : 要加密的内容
  * @param {string} key : 密钥
  * @param {string} iv : 密钥偏移量
- * @param {CBC | ECB | CTR | CFB | OFB} mode : 默认 CBC
+ * @param {string} mode : 默认 CBC,可选 CBC, ECB, CTR, CFB, OFB
  * @param {boolean} isBase64 : 返回值是否是 base64,默认 true
  * @param {string} padding 填充模式,默认为 ZeroPadding,可选值有 Pkcs7, Pkcs5, ZeroPadding
  * @returns {string} 加密的内容
