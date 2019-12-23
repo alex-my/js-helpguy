@@ -1,6 +1,6 @@
 ## 模块
 
-- [ ] crypto
+- [x] crypto
 - [ ] human
 - [ ] ip
 - [ ] jwt
