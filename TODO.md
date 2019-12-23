@@ -8,4 +8,4 @@
 - [ ] sign
 - [x] time
 - [ ] validate
-- [ ] word
+- [x] word
