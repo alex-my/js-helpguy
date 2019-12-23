@@ -4,13 +4,13 @@
  * @returns {number}
  * @example
  *
- * ipToInt('1.2.3.4')
+ * ipToNumber('1.2.3.4')
  * // => 16909060
  *
- * ipToInt('255.255.255.255')
+ * ipToNumber('255.255.255.255')
  * // => 4294967295
  */
-const ipToInt = (ipString) => {
+const ipToNumber = (ipString) => {
     if (!ipString) {
         return 0;
     }
@@ -45,6 +45,6 @@ const ipToString = (ipInt) => {
 };
 
 export default {
-    ipToInt,
+    ipToNumber,
     ipToString
 };
