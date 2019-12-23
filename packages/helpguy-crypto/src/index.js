@@ -192,6 +192,13 @@ const urlDecodeComponent = (word) => decodeURIComponent(word);
  * @param {string} mode : 默认 CBC,可选 CBC, ECB
  * @param {boolean} isBase64 : 返回值是否是 base64,默认 true
  * @returns {string} 加密的内容
+ * @example
+ *
+ * const word = '123456';
+ * const key = '1234567890123456';
+ * const iv = '1234567890123456';
+ * aesEncrypt(word, key, iv, 'CBC', true)
+ * // => 1jdzWuniG6UMtoa3T6uNLA==
  */
 const aesEncrypt = (word, key, iv, mode = 'CBC', isBase64 = true) => {
     const parseKey = crypto.enc.Utf8.parse(key);
@@ -234,6 +241,13 @@ const aesEncrypt = (word, key, iv, mode = 'CBC', isBase64 = true) => {
  * @param {string} mode : 默认 CBC,可选 CBC, ECB
  * @param {boolean} isBase64 : 返回值是否是 base64,默认 true
  * @returns {string} 加密的内容
+ * @example
+ *
+ * const word = '1jdzWuniG6UMtoa3T6uNLA==';
+ * const key = '1234567890123456';
+ * const iv = '1234567890123456';
+ * aesDecrypt(word, key, iv, 'CBC', true)
+ * // => '123456'
  */
 const aesDecrypt = (word, key, iv, mode = 'CBC', isBase64 = true) => {
     const parseKey = crypto.enc.Utf8.parse(key);
@@ -275,6 +289,13 @@ const aesDecrypt = (word, key, iv, mode = 'CBC', isBase64 = true) => {
  * @param {boolean} isBase64 : 返回值是否是 base64,默认 true
  * @param {string} padding 填充模式, ZeroPadding, 可选 Pkcs7, Pkcs5, ZeroPadding
  * @returns {string} 加密的内容
+ * @example
+ *
+ * const word = '123456';
+ * const key = '1234567890123456';
+ * const iv = '1234567890123456';
+ * tripleDesEncode(word, key, iv)
+ * // => /s9ba2b0vhw=
  */
 const tripleDesEncode = (word, key, iv, mode = 'CBC', isBase64 = true, padding = 'ZeroPadding') => {
     const parseKey = crypto.enc.Utf8.parse(key);
@@ -327,6 +348,13 @@ const tripleDesEncode = (word, key, iv, mode = 'CBC', isBase64 = true, padding =
  * @param {boolean} isBase64 : 返回值是否是 base64,默认 true
  * @param {string} padding 填充模式, ZeroPadding, 可选 Pkcs7, Pkcs5, ZeroPadding
  * @returns {string} 加密的内容
+ * @example
+ *
+ * const word = '/s9ba2b0vhw=';
+ * const key = '1234567890123456';
+ * const iv = '1234567890123456';
+ * tripleDesDecode(word, key, iv)
+ * // => '123456'
  */
 const tripleDesDecode = (word, key, iv, mode = 'CBC', isBase64 = true, padding = 'Pkcs7') => {
     const parseKey = crypto.enc.Utf8.parse(key);
@@ -377,6 +405,13 @@ const tripleDesDecode = (word, key, iv, mode = 'CBC', isBase64 = true, padding =
  * @param {boolean} isBase64 : 返回值是否是 base64,默认 true
  * @param {string} padding 填充模式,默认为 ZeroPadding,可选值有 Pkcs7, Pkcs5, ZeroPadding
  * @returns {string} 加密的内容
+ * @example
+ *
+ * const word = '123456';
+ * const key = '1234567890123456';
+ * const iv = '1234567890123456';
+ * desEncrypt(word, key, iv)
+ * // => jTxV04eLf1I=
  */
 const desEncrypt = (word, key, iv, mode = 'CBC', isBase64 = true, padding = 'ZeroPadding') => {
     const parseKey = crypto.enc.Utf8.parse(key);
@@ -429,6 +464,13 @@ const desEncrypt = (word, key, iv, mode = 'CBC', isBase64 = true, padding = 'Zer
  * @param {boolean} isBase64 : 返回值是否是 base64,默认 true
  * @param {string} padding 填充模式,默认为 ZeroPadding,可选值有 Pkcs7, Pkcs5, ZeroPadding
  * @returns {string} 加密的内容
+ * @example
+ *
+ * const word = 'jTxV04eLf1I=';
+ * const key = '1234567890123456';
+ * const iv = '1234567890123456';
+ * desEncrypt(word, key, iv)
+ * // => '123456'
  */
 const desDecrypt = (word, key, iv, mode = 'CBC', isBase64 = true, padding = 'ZeroPadding') => {
     const parseKey = crypto.enc.Utf8.parse(key);

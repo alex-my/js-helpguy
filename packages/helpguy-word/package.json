@@ -5,7 +5,8 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "rollup -c",
-    "test": "jest"
+    "test": "jest",
+    "doc": "jsdoc2md ./src/index.js > ./src/api.md"
   },
   "keywords": [
     "utils",
@@ -26,6 +27,7 @@
     "@babel/preset-env": "^7.7.7",
     "@rollup/plugin-node-resolve": "^6.0.0",
     "jest": "^24.9.0",
+    "jsdoc-to-markdown": "^5.0.3",
     "rollup": "^1.27.13",
     "rollup-plugin-analyzer": "^3.2.2",
     "rollup-plugin-babel": "^4.3.3",

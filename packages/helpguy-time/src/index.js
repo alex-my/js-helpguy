@@ -29,7 +29,7 @@ const ms = () => parseInt(new Date() / 1000, 10);
  *
  * 假设现在是 2018/9/14 16:30:6
  * time(1, 1, 1, 1)
- * // =>
+ * // => 2018/9/15 17:31:7
  */
 const time = (day, hour, min, sec) => {
     const cur = new Date();
@@ -100,6 +100,9 @@ const day = () => {
 /**
  * SLEEP
  * @param {number} microsecond - 毫秒
+ * @example
+ *
+ * sleep(1000)
  */
 const sleep = (microsecond) => {
     return new Promise((resolve) => {

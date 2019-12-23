@@ -2,6 +2,13 @@
  * ip 地址转为数字
  * @param {string} ipString
  * @returns {number}
+ * @example
+ *
+ * ipToInt('1.2.3.4')
+ * // => 16909060
+ *
+ * ipToInt('255.255.255.255')
+ * // => 4294967295
  */
 const ipToInt = (ipString) => {
     if (!ipString) {
@@ -15,6 +22,13 @@ const ipToInt = (ipString) => {
  * 数字转为 ip 地址
  * @param {number} ipInt
  * @return {string}
+ * @example
+ *
+ * ipToString(16909060)
+ * // => 1.2.3.4
+ *
+ * ipToString(4294967295)
+ * // => 255.255.255.255
  */
 const ipToString = (ipInt) => {
     if (!ipInt) {

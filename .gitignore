@@ -5,3 +5,4 @@ packages/*/package-lock.json
 dist
 stats.html
 coverage
+packages/*/src/*.md

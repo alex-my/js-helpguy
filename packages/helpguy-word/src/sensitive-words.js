@@ -1,5 +1,9 @@
 import DfaMap from './dfa-map';
 
+/**
+ * @class
+ * @private
+ */
 class SensitiveWords {
     constructor() {
         this.dfaMap = new DfaMap();

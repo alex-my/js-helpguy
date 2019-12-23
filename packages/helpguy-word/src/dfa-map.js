@@ -1,6 +1,7 @@
 /**
  * DFA 算法
  * 敏感词库
+ * @private
  */
 class DfaMap {
     constructor() {

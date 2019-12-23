@@ -8,6 +8,13 @@ JS utils
 - [TODO](./TODO.md)
 - [CHANGELOG](./CHANGELOG.md)
 
+## API
+
+- [crypto](https://github.com/alex-my/js-helpguy/wiki/api-crypto)
+- [ip](https://github.com/alex-my/js-helpguy/wiki/api-ip)
+- [time](https://github.com/alex-my/js-helpguy/wiki/api-time)
+- [word](https://github.com/alex-my/js-helpguy/wiki/api-word)
+
 ## License
 
 [MIT](./LICENSE)
