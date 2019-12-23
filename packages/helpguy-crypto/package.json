@@ -1,14 +1,21 @@
 {
   "name": "helpguy-crypto",
-  "version": "0.2.0",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "rollup -c",
     "test": "jest"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "utils",
+    "crypto"
+  ],
+  "author": {
+    "name": "alex",
+    "email": "alex_my@126.com",
+    "url": "https://www.keylala.cn"
+  },
   "license": "MIT",
   "dependencies": {
     "crypto-js": "^3.1.9-1"
@@ -31,5 +38,8 @@
     "rollup-plugin-visualizer": "^3.3.1"
   },
   "jsnext": true,
-  "browser": true
+  "browser": true,
+  "files": [
+    "dist/index.js"
+  ]
 }
