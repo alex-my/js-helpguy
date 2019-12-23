@@ -19,6 +19,7 @@
   },
   "lint-staged": {
     "*.js": [
+      "lerna exec npm run test",
       "eslint --fix --color",
       "prettier --write",
       "git add"
