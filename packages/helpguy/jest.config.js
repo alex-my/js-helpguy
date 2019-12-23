@@ -1,4 +1,6 @@
 module.exports = {
+    moduleFileExtensions: ['js'],
+    modulePaths: ['/__tests__/'],
     // 收集测试覆盖率信息
     collectCoverage: true,
     // 配置测试最低阈值
