@@ -2,7 +2,7 @@
 
 - [x] crypto
 - [ ] human
-- [ ] ip
+- [x] ip
 - [ ] jwt
 - [ ] random
 - [ ] regexp
