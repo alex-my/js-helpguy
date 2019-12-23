@@ -14,6 +14,11 @@ module.exports = {
     // https://cn.eslint.org/docs/rules/
     rules: {
         'prettier/prettier': 'error',
-        'class-methods-use-this': 'off'
+        'class-methods-use-this': 'off',
+        'array-bracket-newline': 'off',
+        'array-element-newline': 'off',
+        'no-plusplus': 'off',
+        'no-restricted-syntax': 'off',
+        'import/no-unresolved': 'off'
     }
 };
