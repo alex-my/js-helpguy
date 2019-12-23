@@ -4,9 +4,6 @@
   "workspaces": [
     "packages/*"
   ],
-  "scripts": {
-    "test": "jest"
-  },
   "devDependencies": {
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",
@@ -20,12 +17,8 @@
     "prettier": "^1.19.1",
     "rollup-plugin-eslint": "^7.0.0"
   },
-  "dependencies": {
-    "jest": "^24.9.0"
-  },
   "lint-staged": {
     "*.js": [
-      "jest",
       "eslint --fix --color",
       "prettier --write",
       "git add"
