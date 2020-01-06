@@ -16,7 +16,7 @@ const now = () => parseInt(new Date().getTime() / 1000, 10);
  * ms()
  * // => 1536911609
  */
-const ms = () => parseInt(new Date(), 10);
+const ms = () => parseInt(new Date().getTime(), 10);
 
 /**
  * 获取指定时间后的时间戳

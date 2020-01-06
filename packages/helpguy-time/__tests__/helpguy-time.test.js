@@ -5,7 +5,7 @@ test('now', () => {
 });
 
 test('ms', () => {
-    expect(time.ms()).toBe(parseInt(new Date(), 10));
+    expect(time.ms()).toBe(parseInt(new Date().getTime(), 10));
 });
 
 test('time', () => {
