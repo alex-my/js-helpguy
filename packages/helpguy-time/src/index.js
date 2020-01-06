@@ -9,14 +9,14 @@
 const now = () => parseInt(new Date().getTime() / 1000, 10);
 
 /**
- * 当前时间戳(耗秒)
+ * 当前时间戳(毫秒)
  * @returns {number}
  * @example
  *
  * ms()
  * // => 1536911609
  */
-const ms = () => parseInt(new Date() / 1000, 10);
+const ms = () => parseInt(new Date(), 10);
 
 /**
  * 获取指定时间后的时间戳
@@ -94,7 +94,7 @@ const tomorrowZero = () => {
  */
 const day = () => {
     const d = new Date();
-    return `${d.getFullYear()}${d.getMonth() + 1}${d.getDate()}`;
+    return d.getFullYear() + `0${d.getMonth() + 1}`.slice(-2) + `0${d.getDate()}`.slice(-2);
 };
 
 /**
